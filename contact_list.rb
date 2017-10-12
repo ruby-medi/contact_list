@@ -19,7 +19,8 @@ def add_contact
       phone=ask("enter a phone number:")
       contact["phone_numbers"].push(phone)
     end
-  end  
+  end
+end  
 
 answer=""
 contact_list = [] 
@@ -33,9 +34,11 @@ puts "---"
 contact_list.each do |contact|
   puts "name: #{contact["name"]}"
   if contact["phone_numbers"].size>0
+
     contact["phone_numbers"].each do |phone_number|
     puts "phone: #{phone_number}"
     end
+
   end
   puts "-------\n"
 end
